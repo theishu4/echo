@@ -1,31 +1,11 @@
-# shadcn/ui monorepo template
+# Workflow
 
-This template is for creating a monorepo with shadcn/ui.
+## 1. Setup
 
-## Usage
-
-```bash
-pnpm dlx shadcn@latest init
-```
-
-## Adding components
-
-To add components to your app, run the following command at the root of your `web` app:
-
-```bash
-pnpm dlx shadcn@latest add button -c apps/web
-```
-
-This will place the ui components in the `packages/ui/src/components` directory.
-
-## Tailwind
-
-Your `tailwind.config.ts` and `globals.css` are already set up to use the components from the `ui` package.
-
-## Using components
-
-To use the components in your app, import them from the `ui` package.
-
-```tsx
-import { Button } from "@workspace/ui/components/button"
-```
+- Install `pnpm` v10
+- Setup Turborepo
+  - [Use shadcn/ui template](https://ui.shadcn.com/docs/monorepo)
+- [Learn to use monorepo](https://turborepo.com/docs/crafting-your-repository/creating-an-internal-package)
+- Create 2nd(widget) app
+- Create `math` shared package
+- [Add new shadcn component](https://ui.shadcn.com/docs/monorepo#add-components-to-your-project)
